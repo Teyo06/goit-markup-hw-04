@@ -8,29 +8,35 @@
 }
 .icon {
    display: inline-block;
-   width: 50px;
-   height: 50px;
+   width: 200px;
+   height:80px;
    stroke-width: 0;
    stroke: currentColor;
    fill: currentColor;
+   border: 1px  #F5F4FA;
+   background-color:#F5F4FA ;
 }
 .icon-contacts{
    width: 1.3330078125em;
+   vertical-align: middle;
 }
-
-
 .icon-Logo-1 {
    width: 1.7666015625em;
 }
  .background h1{
    color:#ffffff;
-
 }
 .background{
    background-image:linear-gradient(rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.8)), url(../images/background.jpg);
-   background-size: cover;
-   background-position: center;
-   height: 400px;
+   color: #ffffff;
+   height: 80vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-image: linear-gradient(0deg,
+       rgba(47, 48, 58, 0.4),
+       rgba(47, 48, 58, 0.4)),
+       url(../images/background.jpg);
 }
 .intro-title{
    padding-top: 150px;
@@ -38,6 +44,25 @@
    color:#ffffff;
    text-align: center;
 }  
+.icon-customers {
+   display: flex;
+   justify-content: space-evenly;
+   border: 1px solid #afb1b8;
+   border-radius: 5px;
+   width: 170px;
+   height: 92px;
+   padding-right: 20px;
+   margin-right: 10px;
+}
+.icon-socials:hover{
+   fill: #2196F3;
+}
+.customers-section svg:hover{
+   fill: var(#2196F3);
+   border-radius: 2px;
+   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .item-list{
    display:flex;
    justify-content: space-evenly;
@@ -90,11 +115,20 @@ img{
    margin: auto;
    
 }
-.employee{
-   box-shadow:2px 3px 5px #757575;
-   padding: 20px;
+.employee {
+   border-radius: 3px;
+   box-shadow: 1px 1.5px 2px rgba(0, 0, 0, 0.2);
 }
-
+.employee h6{
+   display: flex;
+   justify-content: center;
+   font-size: 16px;
+}
+.employee p{
+   display: flex;
+   justify-content: center;
+   font-size: 16px;
+}
 .no-underline{
    text-decoration: none;
 }
@@ -110,6 +144,11 @@ img{
    align-items: center;
    width: 200px;
 
+}
+
+.employee-icon svg :hover{
+   fill: #2196F3;
+   stroke: #2196F3;
 }
 /* customers section*/
 .customers{
@@ -137,7 +176,7 @@ body {
    color: #212121;
    padding-left: 20px;
    display:inline-block;
-   
+   align-items: center;
 }
 .header-item:hover{
    text-decoration: underline;
@@ -240,19 +279,15 @@ button:hover{
    gap: 20px;
    width: 80%;
    margin: auto;
-  
-   
 }
 .product:hover{
    border:1px solid #EEEEEE;
    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
-   
 }
 
 .product {
    text-align: left;
    display: block;
-   
 }
 
 .product img {
@@ -284,6 +319,9 @@ border-radius:0% ;
    background-color: #2F303A;
    padding: 20px;
    color: #ffffff;
+   display: flex;
+   flex-direction: row;
+   
 }
 .blue{
    color: #2196F3;
@@ -293,23 +331,28 @@ border-radius:0% ;
    font-size: 26px;
    
 }
-.footer div ul{
-   padding: 0;
-   margin: 0;
-   display: list-item;
-}
+
+
 .footer-title:hover,
 .footer-item:hover,
 .footer-link:hover {
    text-decoration: underline;
    color: #2196F3;
 }
-
+.footer-container{
+   align-items: stretch;
+   margin-top: -20px;
+}
 .footer-icon{
-   fill: #ffffff;
    opacity: "0.1";
    width: 100px;
    display: flex;
    margin-top: -50px;
-   align-items: baseline;
+   justify-content: space-evenly;
+}
+.footer-icon:hover{
+   fill: var(#2196F3);
+}
+.footer-list{
+   display: list-item;
 }
